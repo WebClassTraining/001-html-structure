@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table Page</title>
+		<style>
+ 			body {
+        			background: #000;
+        			color: #fff;
+        			padding: 25px;
+        			font-family: sans-serif;
+        		}
+			body { font-family: sans-serif;}
+			table { width: 100%; border-collapse: collapse;}
+ 			table, th, td {
+        			border: 1px solid white;
+        			padding: 8px;
+        		}
+ 			th {
+        			background-color: #888888;
+        		}
+		</style>
+	</head>
+	<body>
+		<h1>My Tables</h1>
+		 <table>
+  		     <thead>
+    			<tr>
+			      <th>ID</th>
+			      <th>Name</th>
+			      <th>Email</th>
+			</tr>
+  		     </thead>
+  		     <tbody>
+		    	<tr>
+				<td>1</td>
+				<td>John Doe</td>
+		        	<td>john@example.com</td>
+		         </tr>
+		    	<tr>
+		      		<td>2</td>
+		      		<td>Jane Smith</td>
+		      		<td>jane@example.com</td>
+		    	</tr>
+		    	<tr>
+		      		<td>3</td>
+		      		<td>Michael Johnson</td>
+		      		<td>michael@example.com</td>
+		    	</tr>
+		  </tbody>
+		</table>
+
+<h2>Combine Row and Column Table</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th colspan="2">Contact Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">1</td>
+      <td>John Doe</td>
+      <td>Email</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>123-456-7890</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td colspan="3">Jane Smith (No Contact Information Available)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">3</td>
+      <td>Michael Johnson</td>
+      <td>Email</td>
+      <td>michael@example.com</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>987-654-3210</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Table Tags Specification</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;table&gt;</td>
+      <td>Defines a table structure</td>
+    </tr>
+    <tr>
+      <td>&lt;tbody&gt;</td>
+      <td>Groups the body content of a table</td>
+    </tr>
+    <tr>
+      <td>&lt;td&gt;</td>
+      <td>Defines a cell within a table</td>
+    </tr>
+    <tr>
+      <td>&lt;tfoot&gt;</td>
+      <td>Groups the footer content of a table</td>
+    </tr>
+    <tr>
+      <td>&lt;th&gt;</td>
+      <td>Defines a header cell in a table</td>
+    </tr>
+    <tr>
+      <td>&lt;thead&gt;</td>
+      <td>Groups the header content of a table</td>
+    </tr>
+    <tr>
+      <td>&lt;tr&gt;</td>
+      <td>Defines a row in a table</td>
+    </tr>
+  </tbody>
+</table>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        h2 {
+            font-size: 10vw;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .left {
+            background-color: burlywood;
+            padding: 20px;
+            font-size: 32px;
+            text-align: center;
+            width: 20%;
+            float: left;
+        }
+
+        .center {
+            background-color: azure;
+            padding: 20px;
+            font-size: 32px;
+            text-align: center;
+            width: 60%;
+            float: left;
+        }
+
+        .right {
+            background-color: aqua;
+            padding: 20px;
+            font-size: 32px;
+            text-align: center;
+            width: 20%;
+            float: left;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .left,
+            .center,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Responsive</h2>
+    <!-- <picture>
+        <source srcset="/images/one.png" media="(max-width: 600px)">
+        <source srcset="/images/workplace.jpg" media="(max-width: 1500px)">
+        <source srcset="/images/rose.jpg">
+        <img src="/images/workplace.jpg" alt="workplace">
+    </picture> -->
+
+    <div class="left">
+        <p>Left Menu</p>
+    </div>
+    <div class="center">
+        <p>center menu</p>
+    </div>
+    <div class="right">
+        <p>right menu</p>
+    </div>
+</body>
+
+</html>

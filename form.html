@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="action_page.php" method="post" novalidate autocomplete="on" target="_blank"
+        oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <fieldset style="border: 2px solid lightgray; padding: 20px; border-radius: 10px; background-color: aliceblue;">
+            <legend style="font-size: 32px; font-weight: bold; color: blue;">Form Details</legend>
+            <fieldset
+                style="border: 2px solid lightblue; padding: 20px; border-radius: 10px; background-color: antiquewhite;">
+                <legend style="font-size: 24px; font-weight: bold; color: cadetblue">Personal Details</legend>
+                <label for="fname">First Name: </label>
+                <input type="text" name="fname">
+                <br><br>
+                <label for="lname">Last Name: </label>
+                <input type="text" name="lname">
+                <br>
+                <br>
+                <label for="password">Password: </label>
+                <input type="password" name="password">
+                <br><br>
+                <label for="gender">Gender: </label>
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+                <label><input type="radio" name="gender"> Transgender</label>
+                <br><br>
+                <label for="skills">Skills: </label>
+                <label for="html">
+                    <input type="checkbox" name="html" id="html"> HTML
+                </label>
+
+                <input type="checkbox" name="css" id="css">CSS
+                <input type="checkbox" name="javascript" id="javascript">JavaScript
+                <br><br>
+                <label for="backend">Backend : </label>
+                <input list="programLangList">
+                <datalist id="programLangList">
+                    <option value="node.js">Node.js</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="c#">C#</option>
+                    <option value="golang">Golang</option>
+                    <option value="rust">Rust</option>
+                </datalist>
+                <br><br>
+                <label for="hobbies">Hobbies : </label>
+                <input list="hobbies">
+                <datalist id="hobbies">
+                    <option value="swimming">Swimming</option>
+                    <option value="reading">Reading</option>
+                    <option value="traveling">Traveling</option>
+                    <option value="football">Football</option>
+                    <option value="game">Game</option>
+                    <option value="running">Running</option>
+                    <option value="music">Music</option>
+                </datalist>
+                <br><br>
+                <label for="countries">Choose your country : </label>
+                <select name="countries" id="countries" size="6" multiple>
+                    <option value="myanmar">Myanmar</option>
+                    <option value="thailand">Thailand</option>
+                    <option value="japan">Japan</option>
+                    <option value="china">China</option>
+                    <option value="america" selected>America</option>
+                    <option value="singapore">Singapore</option>
+                </select>
+            </fieldset>
+            <br>
+            <p style="color: lightpink;">If you don't have company, skip this section.</p>
+            <fieldset
+                style="border: 2px dashed lightsalmon; background-color: lightyellow; padding: 10px; border-radius: 10px;">
+                <legend style="font-size: 24px; font-weight: bold; color: lightsalmon;">Company Details</legend>
+                <label for="company">Company Name : </label>
+                <input type="text" name="company">
+                <br><br>
+                <label for="compPhone">Company Phone : </label>
+                <input type="text" name="compPhone">
+                <br><br>
+                <label for="compAddress">Company Address : </label>
+                <textarea name="compAddress" id="compAddress" rows="3" cols="30"></textarea>
+                <br><br>
+
+                <label for="remark">Remark : </label>
+                <textarea name="remark" id="remark" cols="30" rows="6"></textarea>
+            </fieldset>
+            <br>
+            <fieldset
+                style="border: 2px solid lightblue; padding: 20px; border-radius: 10px; background-color: antiquewhite;">
+                <legend style="font-size: 24px; font-weight: bold; color: lightskyblue">Calculation</legend>
+                <pre>
+                    <input type="number" name="num1" id="num1" value="50"> + <input type="number" id="num2" name="num2" value="100"> = <output for="num1 num2" name="result"></output>
+                </pre>
+            </fieldset>
+            <br>
+            <input
+                style="padding: 10px; color: white; font-size: 16px; border-radius: 8px; border: none; background-color: lightcoral;"
+                type="button" name="button" id="button" value="ClickMe" onclick="alert('Hello You Click Me!')">
+            <input
+                style="padding: 10px; color: white; font-size: 16px; border-radius: 8px; border: none; background-color: blue;"
+                type="submit" value="send">
+        </fieldset>
+    </form>
+</body>
+
+</html>

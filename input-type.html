@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+</head>
+
+<body>
+    <form action="server_page.php" method="post">
+        <fieldset>
+            <legend>Input Types</legend>
+            <label for="checkbox">Checkbox</label>
+            <label for="html"><input type="checkbox" name="html">HTML</label>
+            <label for="css"><input type="checkbox" name="css">CSS</label>
+            <label for="javascript"><input type="checkbox" name="javascript">JavaScript</label>
+            <br>
+
+            <label for="color">Color</label>
+            <input type="color" name="color"><br>
+
+            <label for="date">Date</label>
+            <input type="date" name="date"><br>
+
+            <label for="datetime">Datetime</label>
+            <input type="datetime-local" name="datetime"><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="username@example.com"><br>
+
+            <label for="file">File</label>
+            <input type="file" name="file"><br>
+
+            <label for="hidden">Hidden</label>
+            <input type="hidden" name="hidden"><br>
+
+            <label for="month">Month</label>
+            <input type="month" name="month"><br>
+
+            <label for="number">Number</label>
+            <input type="number" name="number" autofocus><br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password"><br>
+
+            <label for="radio">Radio</label>
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender" checked> Female</label>
+            <label><input type="radio" name="gender"> Transgender</label><br>
+
+            <label for="range">Range</label>
+            <input type="range" name="range" value="20" readonly><br>
+
+            <label for="search">Search</label>
+            <input type="search" name="search" disabled><br>
+
+            <label for="tel">Tel</label>
+            <input type="tel" name="tel" value="+959789456321" readonly><br>
+
+            <label for="text">Text</label>
+            <input type="text" name="text" size="10" maxlength="5"><br>
+
+            <label for="time">Time</label>
+            <input type="time" name="time"><br>
+
+            <label for="url">Url</label>
+            <input type="url" name="url"><br>
+
+            <label for="week">Week</label>
+            <input type="week" name="week"><br>
+
+            <label for="button">Button</label>
+            <input type="button" name="button" value="Save as" onclick="alert('Save as successfully!')" disabled>
+
+            <label for="reset">Reset</label>
+            <input type="reset" name="reset">
+
+            <label for="submit">Submit</label>
+            <input type="submit" name="submit">
+
+            <label for="image">Image</label>
+            <input type="image" name="image" src="/images/favicon.ico" width="60" height="60">
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>layout</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		header {
+			background-color: gray;
+			color: white;
+			padding: 16px;
+			font-size: 32px;
+			text-align: center;
+		}
+
+		nav {
+			/* float: left; */
+			width: 25%;
+			height: 410px;
+			background-color: whitesmoke;
+		}
+
+		nav ul {
+			list-style-type: none;
+		}
+
+		nav>ul>li>a {
+			text-decoration: none;
+		}
+
+		article {
+			width: 75%;
+			/* float: left; */
+			height: 410px;
+			background-color: aliceblue;
+		}
+
+		section {
+			display: flex;
+		}
+
+		section::after {
+			clear: both;
+			display: table;
+			content: "";
+		}
+
+		footer {
+			background-color: lightgrey;
+			color: white;
+			padding: 8px;
+			font-size: 14px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h2>Cities</h2>
+	</header>
+	<section>
+		<!-- 25% -->
+		<nav>
+			<ul>
+				<li><a href="#">Yangon</a></li>
+				<li><a href="#">Mandalay</a></li>
+				<li><a href="#">Sagaing</a></li>
+			</ul>
+		</nav>
+		<!-- 75% -->
+		<article>
+			<h3>Yangon</h3>
+			<p>Yangon si the largest city and commercial capital of Myanmar</p>
+			<p>It is located in the southern part of the country.</p>
+			<p>The city serves as a major economic hub.</p>
+
+			<h3>Mandalay</h3>
+			<p>Mandalay is the second largest city of the Myanmar</p>
+			<p>It is considered the cultural heart of Myanmar</p>
+			<p>Mandalay serve as a Royal capital of Myanmar</p>
+
+			<h3>Sagaing</h3>
+			<p>Sagaing is a city located on the Irrawaddy River.</p>
+			<p>Sagaing Hills is the focal point of the city</p>
+		</article>
+	</section>
+	<!-- remove float after section -->
+	<footer>
+		<p>This website is copyright &copy; by Web Class Training. </p>
+	</footer>
+</body>
+
+</html>

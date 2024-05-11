@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border-bottom: 1px dashed black;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 12px;
+        }
+
+        tr:hover {
+            background-color: aquamarine;
+        }
+
+        /* tr:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        td:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+        } */
+    </style>
+</head>
+
+<body>
+    <h2>User List</h2>
+    <table>
+        <caption>Horizontal User Table List</caption>
+        <tr>
+            <th>No</th>
+            <th colspan="2">Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Aung</td>
+            <td>Aung</td>
+            <td>Yangon</td>
+            <td>09789987987</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Su Su</td>
+            <td>Win</td>
+            <td>Mandalay</td>
+            <td>09959079587</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Bo</td>
+            <td>Bo</td>
+            <td>Yangon</td>
+            <td>09958779587</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Aye</td>
+            <td>Aye</td>
+            <td>Mandalay</td>
+            <td>09959079589</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Suzi</td>
+            <td>Win</td>
+            <td>Yangon</td>
+            <td>09959070587</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Ye</td>
+            <td>Zaw</td>
+            <td>Mandalay</td>
+            <td>09959079587</td>
+        </tr>
+    </table>
+
+    <h2>Vertical Table Header</h2>
+    <table>
+        <caption>Vertical User Table List</caption>
+        <tr>
+            <th>No</th>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>Aung Myint</td>
+            <td>Su Su</td>
+        </tr>
+        <tr>
+            <td>Moe</td>
+            <td>Win</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>Sagaing</td>
+            <td>Pyin Oo Lwin</td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td>09877565456</td>
+            <td>09965789600</td>
+        </tr>
+    </table>
+</body>
+
+</html>

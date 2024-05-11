@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        /* Add some basic styling to make the page look better */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #mypara {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Testing the JavaScript</h2>
+    <p id="mypara">This is paragraph</p>
+    <button id="change-btn">Click Me</button>
+    <script>
+        // Get the paragraph and button elements
+        const para = document.getElementById('mypara');
+        const btn = document.getElementById('change-btn');
+
+        // Add an event listener to the button
+        btn.addEventListener('click', changeBackground);
+
+        function changeBackground() {
+            para.style.backgroundColor = 'green';
+            para.style.fontSize = '38px';
+            para.style.color = 'white';
+            para.innerHTML = new Date().toLocaleString();
+        }
+
+        // Generate a random sentence
+        function generateSentence(prompt) {
+            const words = ["excellent", "interesting", "useful"];
+            const phrase = prompt + " is " + words[Math.floor(Math.random() * words.length)];
+            return phrase;
+        }
+
+        // Call the generateSentence() function:
+        const sentence = generateSentence("This is: ");
+
+        // Print the generated sentence to the console:
+        console.log(sentence);
+    </script>
+    <noscript>
+        Sorry, your browser does not support JavaScript! Please enable it first!
+    </noscript>
+</body>
+
+</html>
